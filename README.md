@@ -59,6 +59,33 @@
 
 ---
 
+## 📸 示例效果
+
+以下示例均由本 skill 对话生成，通过 `validate-svg.ts` 校验，可直接粘进 PowerPoint 转形状编辑。SVG 源文件见 `arch-diagram/` 对应目录。
+
+### 架构图
+
+**电商技术架构** · `layered-stack`（分层）+ `dark-tech`（暗色科技）
+<p><img src="arch-diagram/ecommerce-platform/diagram@1.5x.png" width="640" alt="电商技术架构"></p>
+
+**实时数据管道** · `flow-pipeline`（流水线）+ `light-tech`（亮色清爽）
+<p><img src="arch-diagram/realtime-data-pipeline/diagram@1.3x.png" width="640" alt="实时数据管道"></p>
+
+**统一身份认证中心** · `hub-spoke`（中心辐射）+ `civic-blue`（政务商务）
+<p><img src="arch-diagram/iam-center/diagram@1.3x.png" width="520" alt="统一身份认证中心"></p>
+
+### 流程图（swimlane 泳道）
+
+**海外电商退款流程** · 纵向泳道 + `light-tech`，含菱形决策、回环虚线、多结束状态
+<p><img src="arch-diagram/overseas-refund/diagram.png" width="360" alt="海外退款流程"></p>
+
+**SaaS 注册流程** · 纵向泳道 + `light-tech`，含查重拦截、验证码重试锁定、异常结束
+<p><img src="arch-diagram/saas-signup/diagram.png" width="340" alt="SaaS注册流程"></p>
+
+> 💡 流程图展示了完整业务逻辑（决策分支 / 异常回退 / 多结束状态），不只是"快乐路径"主线——这得益于 skill 的流程细节追问机制。
+
+---
+
 ## 适用场景
 
 - **toB / 商务汇报**：方案汇报、客户演示、投标文档、售前材料、商业计划书、项目申报书（用 civic-blue 显专业）
@@ -191,19 +218,6 @@ renais-svg-arch/
     ├── icon-preview/                   # 图标库预览
     └── ppt-shapes/                     # PPT 编辑步骤截图
 ```
-
----
-
-## 示例效果
-
-| 场景 | 布局 + 风格 | 预览 |
-|------|------------|------|
-| 电商技术架构 | layered-stack + dark-tech | `arch-diagram/ecommerce-platform/diagram.svg` |
-| 实时数据管道 | flow-pipeline + light-tech | `arch-diagram/realtime-data-pipeline/diagram.svg` |
-| 统一身份认证 | hub-spoke + civic-blue | `arch-diagram/iam-center/diagram.svg` |
-| 海外退款流程 | swimlane（纵向）+ light-tech | `arch-diagram/overseas-refund/diagram.svg` |
-
-> 所有示例都通过了 `validate-svg.ts` 校验，可直接粘进 PPT 转形状编辑。
 
 ---
 
