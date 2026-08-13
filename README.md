@@ -1,8 +1,22 @@
-# renais-svg-arch · SVG 架构图生成器
+# renais-svg-arch · AI 生成可编辑 SVG 架构图 / 流程图（PowerPoint · WPS 友好）
+
+> 用 AI 对话生成专业**技术架构图、系统架构图、云架构图、数据流程图、业务流程图、泳道图**，输出纯 SVG，可直接粘进 **PowerPoint / WPS** 并**转换为可编辑形状**继续修改。
+
+**English**: An AI-powered ZCode skill that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint/WPS-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
 
 一个 ZCode skill：**输入架构描述（文字 / Markdown / 文档），输出可直接粘进 PPT 并继续编辑的专业 SVG 架构图。** 纯 SVG 代码生成，不依赖外部 API。
 
 最大的特点不是"画得好看"，而是**画出来的 SVG 在 PowerPoint / WPS 里能转换为可编辑形状**——不是一张死图，每个模块、每根线、每个字都能在 PPT 里继续改。
+
+---
+
+## 🔍 关键词 / Keywords
+
+> 以下关键词供搜索检索用。
+
+**中文**：SVG 架构图 · 技术架构图 · 系统架构图 · 云架构图 · 分层架构 · 数据流程图 · 业务流程图 · 泳道图 · 时序图 · 流程图生成 · AI 画架构图 · 自动生成架构图 · PowerPoint 架构图 · WPS 架构图 · SVG 转形状 · 可编辑架构图 · PPT 矢量图 · 微服务架构图 · 数据中台架构 · SaaS 架构图 · 政务架构图 · 投标方案图 · ZCode skill · AI agent
+
+**English**: SVG architecture diagram · technical architecture · system architecture · cloud architecture · layered diagram · data pipeline · flowchart · swimlane · sequence diagram · AI diagram generator · PowerPoint SVG · WPS SVG · convert SVG to shape · editable diagram · vector diagram for PPT · microservices architecture · data platform · SaaS architecture · ZCode skill · AI agent
 
 ---
 
@@ -24,12 +38,14 @@
 
 ## 适用场景
 
-- **toB / 商务**：方案汇报、客户演示、投标文档、售前材料（用 civic-blue 显专业）
-- **toC / 产品**：产品介绍、运营物料、对外宣发（用 dark-tech / light-tech 显科技感）
-- **内部协作**：技术评审、架构文档、设计说明、专利附图（用 minimal-mono 显严谨）
+- **toB / 商务汇报**：方案汇报、客户演示、投标文档、售前材料、商业计划书、项目申报书（用 civic-blue 显专业）
+- **toC / 产品运营**：产品介绍、运营物料、对外宣发、App 上架截图、官网配图（用 dark-tech / light-tech 显科技感）
+- **技术文档 / 内部协作**：技术评审、架构文档、设计说明、API 文档、专利附图、论文配图、白皮书（用 minimal-mono 显严谨）
+- **数据 & 流程**：数据中台架构、ETL 数据管道、微服务拓扑、业务审批流程、工单流转、SOP 标准作业流程
 - **嵌入 PPT 后微调**：转成形状后改文字、换配色、调位置，再发给客户或领导
 
 > 核心价值：**生成 → 放进 PPT → 转形状 → 继续编辑**，全程不脱离 Office，交付物是"可二改的形状"，不是"死图片"。
+
 
 ---
 
@@ -177,3 +193,31 @@ renais-svg-arch/
 ## License
 
 MIT
+
+---
+
+## 📌 上传到 GitHub 后的建议设置
+
+仓库的 **About 描述** 和 **Topics 标签**是 GitHub 搜索权重最高的地方，建好仓库后务必设置：
+
+### About 描述（仓库主页右上角 ⚙️ 设置）
+
+```
+AI 生成可编辑 SVG 架构图 / 流程图，支持 PowerPoint/WPS 转形状编辑。4 风格 × 4 布局，含引导式提问与 PPT 兼容校验。
+```
+
+英文版（可选）：
+```
+AI-generated editable SVG architecture & flowchart diagrams. PowerPoint/WPS-compatible, convertible to Office shapes. 4 styles × 4 layouts with guided Q&A and PPT validation.
+```
+
+### Topics 标签（建议全加上，提升被检索概率）
+
+```
+svg  architecture-diagram  flowchart  swimlane  powerpoint  wps
+diagram-generator  ai-diagram  editable-svg  tech-architecture
+system-architecture  zcode-skill  ai-agent  vector-diagram
+```
+
+> 在仓库主页点 ⚙️ → 填 Description → 加 Topics（空格分隔，每个会变成可点击的搜索标签）。
+
