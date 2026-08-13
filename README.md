@@ -2,9 +2,9 @@
 
 > 为**产品经理、售前 / 解决方案专家**打造：用 AI 对话生成专业**技术架构图、系统架构图、云架构图、数据流程图、业务流程图、泳道图**，输出纯 SVG，可直接粘进 **PowerPoint** 并**转换为可编辑形状**继续修改。几分钟把方案梳理成能见客户的配图。
 
-**English**: An AI-powered ZCode skill that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
+**English**: An AI-powered skill (works with ZCode / Claude Code / Codex) that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
 
-一个 ZCode skill：**输入架构描述（文字 / Markdown / 文档），输出可直接粘进 PPT 并继续编辑的专业 SVG 架构图。** 纯 SVG 代码生成，不依赖外部 API。
+一个 AI 编码工具 skill（兼容 **ZCode / Claude Code / Codex**）：**输入架构描述（文字 / Markdown / 文档），输出可直接粘进 PPT 并继续编辑的专业 SVG 架构图。** 纯 SVG 代码生成，不依赖外部 API。
 
 最大的特点不是"画得好看"，而是**画出来的 SVG 在 PowerPoint 里能转换为可编辑形状**——不是一张死图，每个模块、每根线、每个字都能在 PPT 里继续改。
 
@@ -152,7 +152,7 @@
 6. **多风格多布局**：一套描述能出不同视觉，适配商务/科技/论文等不同场合
 7. **几何错误有兜底**：箭头遮挡、线条溢出这类"语法对但视觉错"的 bug，有专门的几何检测抓
 
-## 缺点（诚实说明）
+## 不足
 
 1. **复杂流程图 PPT 编辑难**：如上所述，泳道图元素多，转形状后手改费劲，建议对话重生成
 2. **视觉效果有限**：为了 PPT 兼容，放弃了渐变阴影、发光、模糊等高级效果，视觉不如 Figma/Sketch 炫
@@ -166,15 +166,47 @@
 
 ## 快速开始
 
-这是一个 ZCode skill，放到 skills 目录后，直接对 AI 说：
+本 skill 由一组文档（`SKILL.md` + `references/`）和脚本（`scripts/`）组成，核心是**让 AI 读取规范后按流程生成 SVG**——这套机制在主流 AI 编码工具上都能用。根据你用的工具选一种安装方式：
+
+### ZCode
+
+把本目录放到 ZCode 的 skills 路径下，直接对话：
 
 ```
 画个架构图
 ```
 
-AI 会引导你选布局、给内容、选风格，然后生成可校验的 SVG。
+### Claude Code
 
-更具体的用法见 [`SKILL.md`](SKILL.md)（skill 的主流程说明）。
+本 skill 的结构（`SKILL.md` 带 YAML frontmatter + `references/` 渐进式披露）与 Claude Code 的 Agent Skills 格式一致。clone 到 Claude 的 skills 目录即可自动加载：
+
+```bash
+# 个人级（所有项目可用）
+git clone https://github.com/Renais-Star/renais-svg-arch.git ~/.claude/skills/renais-svg-arch
+
+# 或项目级（仅当前项目）
+git clone https://github.com/Renais-Star/renais-svg-arch.git .claude/skills/renais-svg-arch
+```
+
+加载后直接对话："画个架构图"，Claude 会按 `SKILL.md` 流程引导。
+
+### Codex（OpenAI Codex CLI）
+
+Codex 通过项目根目录的 `AGENTS.md` 加载指令。本仓库已附带 [`AGENTS.md`](AGENTS.md)（指向 `SKILL.md`），clone 后在仓库目录内启动 Codex 即可自动识别：
+
+```bash
+git clone https://github.com/Renais-Star/renais-svg-arch.git
+cd renais-svg-arch
+codex   # Codex 会自动读取 AGENTS.md
+```
+
+或者在任意 Codex 对话里手动引用：`@SKILL.md 画个架构图`。
+
+### 通用
+
+无论哪个平台，AI 都会引导你选布局、给内容、选风格，然后生成 SVG。更具体的流程见 [`SKILL.md`](SKILL.md)。
+
+> ⚠️ 校验脚本（`validate-svg.ts`）和 PNG 导出（`svg2png.ts`）需要 [bun](https://bun.sh/) 运行环境；纯生成 SVG 不依赖任何运行时。
 
 ### 校验 & 导出 PNG（可选）
 
