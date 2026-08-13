@@ -42,17 +42,17 @@
 **第 1 步：插入 SVG**
 打开 PPT →「插入」→「图片」→ 选择生成的 `.svg` 文件。
 
-![插入 SVG](arch-diagram/ppt形状转换/1-svg上传.png)
+![插入 SVG](arch-diagram/ppt-shapes/1-insert-svg.png)
 
 **第 2 步：转换为形状**
 选中图片 → 右键 →「**转换为形状**」(Convert to Shape)。PPT 会弹出确认框"是否转换为 Microsoft Office 绘图对象？"，点「是」。
 
-![转换为形状](arch-diagram/ppt形状转换/2-形状转换.png)
+![转换为形状](arch-diagram/ppt-shapes/2-convert-to-shape.png)
 
 **第 3 步：变为可编辑状态**
 转换完成后，SVG 变成由多个子形状组成的组合。可以双击任意模块改文字、换颜色、调整大小；右键「组合 → 取消组合」可拆开逐个编辑。
 
-![可编辑状态](arch-diagram/ppt形状转换/3-变为可编辑状态.png)
+![可编辑状态](arch-diagram/ppt-shapes/3-editable.png)
 
 ### 为什么能做到
 
@@ -150,7 +150,7 @@ renais-svg-arch/
     ├── overseas-refund/                # 退款流程（含菱形/回环）
     ├── saas-signup/                    # 注册流程（含多结束状态）
     ├── icon-preview/                   # 图标库预览
-    └── ppt形状转换/                    # PPT 编辑步骤截图
+    └── ppt-shapes/                     # PPT 编辑步骤截图
 ```
 
 ---
