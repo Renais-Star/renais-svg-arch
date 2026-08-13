@@ -1,6 +1,6 @@
 # renais-svg-arch · AI 生成可编辑 SVG 架构图 / 流程图（PowerPoint · WPS 友好）
 
-> 用 AI 对话生成专业**技术架构图、系统架构图、云架构图、数据流程图、业务流程图、泳道图**，输出纯 SVG，可直接粘进 **PowerPoint / WPS** 并**转换为可编辑形状**继续修改。
+> 为**产品经理、售前 / 解决方案专家**打造：用 AI 对话生成专业**技术架构图、系统架构图、云架构图、数据流程图、业务流程图、泳道图**，输出纯 SVG，可直接粘进 **PowerPoint / WPS** 并**转换为可编辑形状**继续修改。几分钟把方案梳理成能见客户的配图。
 
 **English**: An AI-powered ZCode skill that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint/WPS-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
 
@@ -17,6 +17,29 @@
 **中文**：SVG 架构图 · 技术架构图 · 系统架构图 · 云架构图 · 分层架构 · 数据流程图 · 业务流程图 · 泳道图 · 时序图 · 流程图生成 · AI 画架构图 · 自动生成架构图 · PowerPoint 架构图 · WPS 架构图 · SVG 转形状 · 可编辑架构图 · PPT 矢量图 · 微服务架构图 · 数据中台架构 · SaaS 架构图 · 政务架构图 · 投标方案图 · ZCode skill · AI agent
 
 **English**: SVG architecture diagram · technical architecture · system architecture · cloud architecture · layered diagram · data pipeline · flowchart · swimlane · sequence diagram · AI diagram generator · PowerPoint SVG · WPS SVG · convert SVG to shape · editable diagram · vector diagram for PPT · microservices architecture · data platform · SaaS architecture · ZCode skill · AI agent
+
+---
+
+## 🎯 为产品 & 售前岗位打造
+
+> **把脑子里的方案，几分钟变成能见客户的专业配图。** 不用学 Visio / Figma / draw.io，对话描述需求即可，画完直接进 PPT，见客户时还能现场改。
+
+### 产品经理 / PM
+- 写 PRD、产品方案时，快速产出产品架构图、功能模块图、业务流程图
+- 向上汇报产品全貌、横向对齐研发 / 设计的功能边界
+- 把脑中的产品想法立刻可视化，不用等设计师排期
+
+### 售前 / 解决方案专家
+- **客户拜访前临场出图**：下午要见客户，中午把方案架构梳理成专业配图
+- 投标文档、项目申报书里的技术架构图
+- **见客户时现场调整**：客户说"能不能加个数据中台"，当场在 PPT 里改给他看
+- 同一套方案秒切风格：政府 / 国企客户出政务蓝版，互联网客户出科技风版
+
+### 为什么适合这两个岗位
+- ⚡ **零画图门槛**：对话式生成，不用打开专业工具，几分钟出图
+- ✏️ **现场可改**：图进 PPT 转形状后，客户提意见当场调，不用回去重画再约下次
+- 🎨 **多风格适配客户**：一套描述换 4 种视觉，匹配不同客户气质
+- 📋 **架构 + 流程都能画**：技术架构、数据流程、业务审批、SOP 全覆盖
 
 ---
 
