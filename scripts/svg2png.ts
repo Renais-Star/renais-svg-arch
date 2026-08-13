@@ -42,8 +42,10 @@ async function convert(input: string, opts: Options): Promise<{ output: string; 
   const output = getOutputPath(input, opts.scale, opts.output);
   mkdirSync(dirname(output), { recursive: true });
 
-  await sharp(svg, { density: 72 * opts.scale })
-    .resize(width, height)
+  // 2 倍过采样：density 用 144×scale（而非 72×scale），
+  // 初次栅格化成 2 倍目标像素再 resize 缩小，文字/细线更清晰，避免糊。
+  await sharp(svg, { density: 144 * opts.scale })
+    .resize(width, height, { kernel: "lanczos3" })
     .png()
     .toFile(output);
 
