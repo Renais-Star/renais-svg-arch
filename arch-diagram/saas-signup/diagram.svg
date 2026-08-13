@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 1640" font-family="'JetBrains Mono','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="650" height="1640" fill="#FFFFFF"/>
+  <rect width="650" height="1640" fill="url(#grid)"/>
+
+  <text x="325" y="28" font-size="16" font-weight="700" fill="#1e293b" text-anchor="middle">运维 SaaS 个人注册流程 · Signup Flow</text>
+  <text x="325" y="46" font-size="9" fill="#64748b" text-anchor="middle">纵向泳道  ·  含查重拦截 / 验证码重试锁定 / 多结束状态</text>
+
+  <!-- 泳道标题行 -->
+  <rect x="30" y="60" width="600" height="44" rx="6" fill="#1e293b"/>
+  <text x="130" y="88" font-size="12" font-weight="700" fill="#00acc1" text-anchor="middle">用户 · User</text>
+  <text x="330" y="88" font-size="12" font-weight="700" fill="#2ecc71" text-anchor="middle">平台 · Platform</text>
+  <text x="530" y="88" font-size="12" font-weight="700" fill="#7e57c2" text-anchor="middle">短信服务 · SMS</text>
+
+  <!-- 泳道主体 -->
+  <rect x="30" y="104" width="200" height="1500" fill="#e0f7fa" fill-opacity="0.5"/>
+  <rect x="230" y="104" width="200" height="1500" fill="#e8f5e9" fill-opacity="0.5"/>
+  <rect x="430" y="104" width="200" height="1500" fill="#ede7f6" fill-opacity="0.5"/>
+  <line x1="230" y1="60" x2="230" y2="1604" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="430" y1="60" x2="430" y2="1604" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="30" y="60" width="600" height="1544" rx="6" fill="none" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- 步骤行虚线 -->
+  <line x1="30" y1="219" x2="620" y2="219" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="334" x2="620" y2="334" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="449" x2="620" y2="449" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="564" x2="620" y2="564" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="679" x2="620" y2="679" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="794" x2="620" y2="794" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="909" x2="620" y2="909" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1024" x2="620" y2="1024" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1139" x2="620" y2="1139" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1254" x2="620" y2="1254" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1369" x2="620" y2="1369" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1484" x2="620" y2="1484" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+
+  <!-- ============ 连接箭头 ============ -->
+
+  <!-- S→1: (130,183.5)→(130,231.5) 直 -->
+  <line x1="130" y1="183.5" x2="130" y2="222.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,220.5 130,231.5 136,220.5" fill="#fb923c"/>
+
+  <!-- 1→D1: (130,321.5)→D1上顶(330,351.5) 跨道右下 -->
+  <path d="M 130,321.5 L 130,336.5 L 330,336.5 L 330,342.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,340.5 330,351.5 336,340.5" fill="#fb923c"/>
+
+  <!-- D1"是"→E1: D1左顶(280,391.5)→E1顶(130,484.5) -->
+  <path d="M 280,391.5 L 130,391.5 L 130,475.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,473.5 130,484.5 136,473.5" fill="#fb923c"/>
+  <text x="200" y="384" font-size="10" font-weight="700" fill="#e53935">是</text>
+
+  <!-- D1"否"→2: D1下顶(330,431.5)→2顶(330,576.5) 直 -->
+  <line x1="330" y1="431.5" x2="330" y2="567.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,565.5 330,576.5 336,565.5" fill="#fb923c"/>
+  <text x="340" y="470" font-size="10" font-weight="700" fill="#2ecc71">否</text>
+
+  <!-- 2→3: (330,666.5)→(530,691.5) 跨道右下 -->
+  <path d="M 330,666.5 L 330,679 L 530,679 L 530,682.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="524,680.5 530,691.5 536,680.5" fill="#fb923c"/>
+
+  <!-- 3→4: (530,781.5)→(130,806.5) 跨道左下(跨2道) -->
+  <path d="M 530,781.5 L 530,794 L 130,794 L 130,797.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,795.5 130,806.5 136,795.5" fill="#fb923c"/>
+
+  <!-- 4→D2: (130,896.5)→D2上顶(330,926.5) 跨道右下 -->
+  <path d="M 130,896.5 L 130,911.5 L 330,911.5 L 330,917.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,915.5 330,926.5 336,915.5" fill="#fb923c"/>
+
+  <!-- D2"否"→D3: D2下顶(330,1006.5)→D3上顶(330,1041.5) 直 -->
+  <line x1="330" y1="1006.5" x2="330" y2="1032.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,1030.5 330,1041.5 336,1030.5" fill="#fb923c"/>
+  <text x="340" y="1024" font-size="10" font-weight="700" fill="#e53935">否</text>
+
+  <!-- D2"是"→5: D2左顶(280,966.5)→走用户道内空白x=226→5框右(215,1311.5) -->
+  <path d="M 280,966.5 L 226,966.5 L 226,1311.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="226,1305.5 215,1311.5 226,1317.5" fill="#fb923c"/>
+  <text x="290" y="960" font-size="10" font-weight="700" fill="#2ecc71">是</text>
+
+  <!-- D3"否"→回环4: D3右顶(380,1081.5)→走短信道右侧通道x=618(外框630内)→4框右(215,851.5) 红虚线 -->
+  <path d="M 380,1081.5 L 618,1081.5 L 618,851.5 L 224,851.5" fill="none" stroke="#e53935" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="224,845.5 215,851.5 224,857.5" fill="#e53935"/>
+  <text x="385" y="1075" font-size="9" font-weight="700" fill="#e53935">否(重试)</text>
+  <text x="500" y="1075" font-size="9" font-style="italic" fill="#e53935" text-anchor="middle">验证码错误 · 重新输入</text>
+
+  <!-- D3"是"→E2: D3左顶(280,1081.5)→E2顶(130,1174.5) -->
+  <path d="M 280,1081.5 L 130,1081.5 L 130,1165.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,1163.5 130,1174.5 136,1163.5" fill="#fb923c"/>
+  <text x="200" y="1075" font-size="10" font-weight="700" fill="#e53935">是(锁定)</text>
+
+  <!-- 5→6: (130,1356.5)→(330,1381.5) 跨道右下 -->
+  <path d="M 130,1356.5 L 130,1369 L 330,1369 L 330,1372.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,1370.5 330,1381.5 336,1370.5" fill="#fb923c"/>
+
+  <!-- 6→E: (330,1471.5)→E顶(130,1519.5) 跨道左下 -->
+  <path d="M 330,1471.5 L 330,1505 L 130,1505 L 130,1510.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,1508.5 130,1519.5 136,1508.5" fill="#fb923c"/>
+
+  <!-- ============ 节点 ============ -->
+
+  <!-- S: 开始 (130,161.5) 绿 -->
+  <rect x="70" y="139.5" width="120" height="44" rx="22" fill="#2ecc71" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="130" y="166" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">开始 · Start</text>
+
+  <!-- 1: 填写手机号 (130,276.5) 用户cyan -->
+  <rect x="45" y="231.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.5"/>
+  <circle cx="60" cy="246.5" r="9" fill="#00acc1"/>
+  <text x="60" y="250" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <g transform="translate(121.6,242.5) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="2.5" width="11" height="19" rx="2"/>
+      <line x1="10" y1="18.5" x2="14" y2="18.5"/>
+    </g>
+  </g>
+  <text x="130" y="280" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">填写手机号</text>
+  <text x="130" y="296" font-size="9" fill="#64748b" text-anchor="middle">输入手机号</text>
+  <text x="130" y="310" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Phone</text>
+
+  <!-- D1: 已注册？ (330,391.5) 橙菱形 -->
+  <polygon points="330,351.5 380,391.5 330,431.5 280,391.5" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.8"/>
+  <text x="330" y="388" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">手机号</text>
+  <text x="330" y="402" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">已注册？</text>
+
+  <!-- E1: 引导登录 (130,506.5) 红椭圆 -->
+  <rect x="70" y="484.5" width="120" height="44" rx="22" fill="#e53935" stroke="#c62828" stroke-width="1.5"/>
+  <text x="130" y="511" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">引导登录</text>
+
+  <!-- 2: 调用短信服务 (330,621.5) 平台emerald -->
+  <rect x="245" y="576.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.5"/>
+  <circle cx="260" cy="591.5" r="9" fill="#2ecc71"/>
+  <text x="260" y="595" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <g transform="translate(321.6,587.5) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,12 L5,12" stroke-opacity="0.7"/>
+      <path d="M4,11 L5,12 L4,13" stroke-opacity="0.7"/>
+      <path d="M6,4 L6,20"/>
+      <path d="M18,4 L18,20"/>
+      <path d="M6,4 L18,4"/>
+      <path d="M6,20 L18,20"/>
+      <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="330" y="625" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">调用短信服务</text>
+  <text x="330" y="641" font-size="9" fill="#64748b" text-anchor="middle">请求下发验证码</text>
+  <text x="330" y="655" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Send SMS</text>
+
+  <!-- 3: 发送验证码 (530,736.5) 短信violet -->
+  <rect x="445" y="691.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#7e57c2" stroke-width="1.5"/>
+  <circle cx="460" cy="706.5" r="9" fill="#7e57c2"/>
+  <text x="460" y="710" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <g transform="translate(521.6,702.5) scale(0.7)" color="#7e57c2">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="9.5" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="17" y="9" width="5" height="6" rx="0.8"/>
+      <path d="M7,12 L9.5,12"/>
+      <path d="M14.5,12 L17,12"/>
+    </g>
+  </g>
+  <text x="530" y="740" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">发送验证码</text>
+  <text x="530" y="756" font-size="9" fill="#64748b" text-anchor="middle">短信下发用户</text>
+  <text x="530" y="770" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">OTP Sent</text>
+
+  <!-- 4: 输入验证码 (130,851.5) 用户cyan -->
+  <rect x="45" y="806.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.5"/>
+  <circle cx="60" cy="821.5" r="9" fill="#00acc1"/>
+  <text x="60" y="825" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+  <g transform="translate(121.6,817.5) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="2.5" width="11" height="19" rx="2"/>
+      <line x1="10" y1="18.5" x2="14" y2="18.5"/>
+    </g>
+  </g>
+  <text x="130" y="855" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">输入验证码</text>
+  <text x="130" y="871" font-size="9" fill="#64748b" text-anchor="middle">填入收到的码</text>
+  <text x="130" y="885" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Enter OTP</text>
+
+  <!-- D2: 验证码正确？ (330,966.5) 橙菱形 -->
+  <polygon points="330,926.5 380,966.5 330,1006.5 280,966.5" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.8"/>
+  <text x="330" y="963" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">验证码</text>
+  <text x="330" y="977" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">正确？</text>
+
+  <!-- D3: 错误≥3次？ (330,1081.5) 橙菱形 -->
+  <polygon points="330,1041.5 380,1081.5 330,1121.5 280,1081.5" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.8"/>
+  <text x="330" y="1078" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">错误</text>
+  <text x="330" y="1092" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">≥3次？</text>
+
+  <!-- E2: 账号锁定 (130,1196.5) 红椭圆 -->
+  <rect x="70" y="1174.5" width="120" height="44" rx="22" fill="#e53935" stroke="#c62828" stroke-width="1.5"/>
+  <text x="130" y="1203" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">账号锁定</text>
+
+  <!-- 5: 设密码+同意协议 (130,1311.5) 用户cyan -->
+  <rect x="45" y="1266.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.5"/>
+  <circle cx="60" cy="1281.5" r="9" fill="#00acc1"/>
+  <text x="60" y="1285" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <g transform="translate(121.6,1277.5) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4.5" y="11" width="15" height="10" rx="2"/>
+      <path d="M7.5,11 L7.5,7.5 C7.5,5 9.5,3 12,3 C14.5,3 16.5,5 16.5,7.5 L16.5,11"/>
+      <line x1="12" y1="14.5" x2="12" y2="17.5"/>
+      <circle cx="12" cy="14.5" r="1.4"/>
+    </g>
+  </g>
+  <text x="130" y="1315" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">设密码+同意协议</text>
+  <text x="130" y="1331" font-size="9" fill="#64748b" text-anchor="middle">设置登录密码</text>
+  <text x="130" y="1345" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Set Pwd</text>
+
+  <!-- 6: 创建账号 (330,1426.5) 平台emerald -->
+  <rect x="245" y="1381.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.5"/>
+  <circle cx="260" cy="1396.5" r="9" fill="#2ecc71"/>
+  <text x="260" y="1400" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+  <g transform="translate(321.6,1392.5) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4,21 C4,16.5 7.5,13 12,13 C16.5,13 20,16.5 20,21"/>
+    </g>
+  </g>
+  <text x="330" y="1430" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">创建账号</text>
+  <text x="330" y="1446" font-size="9" fill="#64748b" text-anchor="middle">落库、初始化</text>
+  <text x="330" y="1460" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Create</text>
+
+  <!-- E: 注册完成 (130,1541.5) 灰椭圆 -->
+  <rect x="70" y="1519.5" width="120" height="44" rx="22" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+  <text x="130" y="1546" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">注册完成 · End</text>
+
+  <!-- 图例 -->
+  <rect x="45" y="1615" width="28" height="16" rx="8" fill="#2ecc71"/>
+  <text x="80" y="1627" font-size="9" fill="#64748b">开始</text>
+  <rect x="120" y="1615" width="28" height="16" rx="8" fill="#94a3b8"/>
+  <text x="155" y="1627" font-size="9" fill="#64748b">成功结束</text>
+  <rect x="210" y="1615" width="28" height="16" rx="8" fill="#e53935"/>
+  <text x="245" y="1627" font-size="9" fill="#64748b">异常结束</text>
+  <polygon points="305,1623 319,1615 333,1623 319,1631" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="342" y="1627" font-size="9" fill="#64748b">决策</text>
+  <line x1="380" y1="1623" x2="405" y2="1623" stroke="#e53935" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="412" y="1627" font-size="9" fill="#64748b">重试回环</text>
+</svg>

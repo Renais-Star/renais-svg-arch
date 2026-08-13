@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 730" font-family="'JetBrains Mono','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== 背景 ===== -->
+  <rect width="1240" height="730" fill="#0f172a"/>
+  <rect width="1240" height="730" fill="url(#grid)"/>
+
+  <!-- ===== 总标题 ===== -->
+  <text x="620" y="28" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">电商技术架构 · E-commerce Platform Architecture</text>
+
+  <!-- ===== 左侧栏:安全保障体系(rose) ===== -->
+  <rect x="20" y="60" width="120" height="570" rx="10" fill="#881338" fill-opacity="0.4" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="80" y="345" font-size="13" font-weight="700" fill="#fb7185" text-anchor="middle" transform="rotate(-90 80 345)">安全保障体系 · Security</text>
+  <text x="80" y="100" font-size="9" fill="#fecdd3" text-anchor="middle">身份认证</text>
+  <text x="80" y="118" font-size="9" fill="#fecdd3" text-anchor="middle">IAM</text>
+  <text x="80" y="148" font-size="9" fill="#fecdd3" text-anchor="middle">数据加密</text>
+  <text x="80" y="166" font-size="9" fill="#fecdd3" text-anchor="middle">Encryption</text>
+  <text x="80" y="196" font-size="9" fill="#fecdd3" text-anchor="middle">风控反欺诈</text>
+  <text x="80" y="214" font-size="9" fill="#fecdd3" text-anchor="middle">Risk Control</text>
+  <text x="80" y="244" font-size="9" fill="#fecdd3" text-anchor="middle">审计日志</text>
+  <text x="80" y="262" font-size="9" fill="#fecdd3" text-anchor="middle">Audit</text>
+
+  <!-- ===== 右侧栏:运维监控体系(emerald) ===== -->
+  <rect x="1100" y="60" width="120" height="570" rx="10" fill="#064e3b" fill-opacity="0.4" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1160" y="345" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle" transform="rotate(-90 1160 345)">运维监控体系 · Operations</text>
+  <text x="1160" y="100" font-size="9" fill="#a7f3d0" text-anchor="middle">链路追踪</text>
+  <text x="1160" y="118" font-size="9" fill="#a7f3d0" text-anchor="middle">Tracing</text>
+  <text x="1160" y="148" font-size="9" fill="#a7f3d0" text-anchor="middle">指标监控</text>
+  <text x="1160" y="166" font-size="9" fill="#a7f3d0" text-anchor="middle">Metrics</text>
+  <text x="1160" y="196" font-size="9" fill="#a7f3d0" text-anchor="middle">日志聚合</text>
+  <text x="1160" y="214" font-size="9" fill="#a7f3d0" text-anchor="middle">Logging</text>
+  <text x="1160" y="244" font-size="9" fill="#a7f3d0" text-anchor="middle">告警通知</text>
+  <text x="1160" y="262" font-size="9" fill="#a7f3d0" text-anchor="middle">Alerting</text>
+
+  <!-- ===== 侧栏虚线连接到主区各层(rose 虚线,左侧) ===== -->
+  <line x1="140" y1="110" x2="160" y2="110" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="140" y1="230" x2="160" y2="230" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="140" y1="350" x2="160" y2="350" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="140" y1="470" x2="160" y2="470" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="140" y1="585" x2="160" y2="585" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+
+  <!-- ===== 侧栏虚线连接到主区各层(emerald 虚线,右侧) ===== -->
+  <line x1="1080" y1="110" x2="1100" y2="110" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="1080" y1="230" x2="1100" y2="230" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="1080" y1="350" x2="1100" y2="350" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="1080" y1="470" x2="1100" y2="470" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <line x1="1080" y1="585" x2="1100" y2="585" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+
+  <!-- ============ Layer 1: 用户接入层 (cyan) ============ -->
+  <!-- 层背景 -->
+  <rect x="160" y="60" width="920" height="100" rx="10" fill="#083344" fill-opacity="0.4" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="172" y="78" font-size="11" font-weight="700" fill="#22d3ee">用户接入层 · Access Layer</text>
+
+  <!-- 模块 1: Web App -->
+  <rect x="180" y="90" width="160" height="60" rx="6" fill="#0f172a"/>
+  <rect x="180" y="90" width="160" height="60" rx="6" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="260" y="116" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Web App</text>
+  <text x="260" y="134" font-size="9" fill="#94a3b8" text-anchor="middle">PC 网页商城</text>
+
+  <!-- 模块 2: Mobile App -->
+  <rect x="370" y="90" width="160" height="60" rx="6" fill="#0f172a"/>
+  <rect x="370" y="90" width="160" height="60" rx="6" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="450" y="116" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Mobile App</text>
+  <text x="450" y="134" font-size="9" fill="#94a3b8" text-anchor="middle">iOS / Android</text>
+
+  <!-- 模块 3: Mini Program -->
+  <rect x="560" y="90" width="160" height="60" rx="6" fill="#0f172a"/>
+  <rect x="560" y="90" width="160" height="60" rx="6" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="640" y="116" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Mini Program</text>
+  <text x="640" y="134" font-size="9" fill="#94a3b8" text-anchor="middle">小程序</text>
+
+  <!-- 模块 4: H5 Store -->
+  <rect x="750" y="90" width="160" height="60" rx="6" fill="#0f172a"/>
+  <rect x="750" y="90" width="160" height="60" rx="6" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="830" y="116" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">H5 Store</text>
+  <text x="830" y="134" font-size="9" fill="#94a3b8" text-anchor="middle">营销 / 落地页</text>
+
+  <!-- 模块 5: Open API -->
+  <rect x="940" y="90" width="120" height="60" rx="6" fill="#0f172a"/>
+  <rect x="940" y="90" width="120" height="60" rx="6" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="1000" y="116" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Open API</text>
+  <text x="1000" y="134" font-size="9" fill="#94a3b8" text-anchor="middle">第三方接入</text>
+
+  <!-- ============ 箭头 L1 → L2 ============ -->
+  <line x1="620" y1="160" x2="620" y2="181" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="614,179 620,190 626,179" fill="#fb923c"/>
+  <text x="635" y="178" font-size="8" fill="#94a3b8">HTTPS</text>
+
+  <!-- ============ Layer 2: 接入网关层 (orange/connector,横跨) ============ -->
+  <rect x="160" y="190" width="920" height="80" rx="10" fill="#78350f" fill-opacity="0.3" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="172" y="208" font-size="11" font-weight="700" fill="#fb923c">接入网关层 · Gateway Layer</text>
+
+  <!-- 三个子模块 -->
+  <rect x="180" y="218" width="290" height="42" rx="6" fill="#0f172a"/>
+  <rect x="180" y="218" width="290" height="42" rx="6" fill="#78350f" fill-opacity="0.4" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="325" y="237" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">API Gateway · API 网关</text>
+  <text x="325" y="252" font-size="8" fill="#94a3b8" text-anchor="middle">路由 / 限流 / 鉴权</text>
+
+  <rect x="485" y="218" width="290" height="42" rx="6" fill="#0f172a"/>
+  <rect x="485" y="218" width="290" height="42" rx="6" fill="#78350f" fill-opacity="0.4" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="630" y="237" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Load Balancer · 负载均衡</text>
+  <text x="630" y="252" font-size="8" fill="#94a3b8" text-anchor="middle">多机房流量调度</text>
+
+  <rect x="790" y="218" width="270" height="42" rx="6" fill="#0f172a"/>
+  <rect x="790" y="218" width="270" height="42" rx="6" fill="#78350f" fill-opacity="0.4" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="925" y="237" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">WAF · Web 应用防火墙</text>
+  <text x="925" y="252" font-size="8" fill="#94a3b8" text-anchor="middle">防注入 / 防 CC</text>
+
+  <!-- ============ 箭头 L2 → L3 ============ -->
+  <line x1="620" y1="270" x2="620" y2="291" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="614,289 620,300 626,289" fill="#fb923c"/>
+  <text x="635" y="288" font-size="8" fill="#94a3b8">RPC</text>
+
+  <!-- ============ Layer 3: 业务服务层 (emerald) ============ -->
+  <rect x="160" y="300" width="920" height="100" rx="10" fill="#064e3b" fill-opacity="0.4" stroke="#34d399" stroke-width="1.5"/>
+  <text x="172" y="318" font-size="11" font-weight="700" fill="#34d399">业务服务层 · Business Service Layer</text>
+
+  <!-- 6 个微服务模块,宽 130 间距 28 -->
+  <rect x="180" y="330" width="130" height="60" rx="6" fill="#0f172a"/>
+  <rect x="180" y="330" width="130" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="245" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">User Svc</text>
+  <text x="245" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">用户服务</text>
+
+  <rect x="338" y="330" width="130" height="60" rx="6" fill="#0f172a"/>
+  <rect x="338" y="330" width="130" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="403" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Product Svc</text>
+  <text x="403" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">商品服务</text>
+
+  <rect x="496" y="330" width="130" height="60" rx="6" fill="#0f172a"/>
+  <rect x="496" y="330" width="130" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="561" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Order Svc</text>
+  <text x="561" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">订单服务</text>
+
+  <rect x="654" y="330" width="130" height="60" rx="6" fill="#0f172a"/>
+  <rect x="654" y="330" width="130" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="719" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Payment Svc</text>
+  <text x="719" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">支付服务</text>
+
+  <rect x="812" y="330" width="130" height="60" rx="6" fill="#0f172a"/>
+  <rect x="812" y="330" width="130" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="877" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Coupon Svc</text>
+  <text x="877" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">营销服务</text>
+
+  <rect x="970" y="330" width="90" height="60" rx="6" fill="#0f172a"/>
+  <rect x="970" y="330" width="90" height="60" rx="6" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1.2"/>
+  <text x="1015" y="356" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Inventory</text>
+  <text x="1015" y="374" font-size="9" fill="#94a3b8" text-anchor="middle">库存服务</text>
+
+  <!-- ============ 箭头 L3 ↔ L4 (双向) ============ -->
+  <line x1="620" y1="411" x2="620" y2="419" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="614,400 620,411 626,400" fill="#fb923c"/>
+  <polygon points="614,430 620,419 626,430" fill="#fb923c"/>
+  <text x="635" y="418" font-size="8" fill="#94a3b8">Cache / MQ</text>
+
+  <!-- ============ Layer 4: 中间件层 (violet,横跨) ============ -->
+  <rect x="160" y="430" width="920" height="80" rx="10" fill="#4c1d95" fill-opacity="0.4" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="172" y="448" font-size="11" font-weight="700" fill="#a78bfa">中间件层 · Middleware Layer</text>
+
+  <rect x="180" y="458" width="210" height="42" rx="6" fill="#0f172a"/>
+  <rect x="180" y="458" width="210" height="42" rx="6" fill="#4c1d95" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="285" y="477" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Message Queue</text>
+  <text x="285" y="492" font-size="8" fill="#94a3b8" text-anchor="middle">消息队列 · RocketMQ</text>
+
+  <rect x="405" y="458" width="210" height="42" rx="6" fill="#0f172a"/>
+  <rect x="405" y="458" width="210" height="42" rx="6" fill="#4c1d95" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="510" y="477" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Distributed Cache</text>
+  <text x="510" y="492" font-size="8" fill="#94a3b8" text-anchor="middle">Redis Cluster</text>
+
+  <rect x="630" y="458" width="210" height="42" rx="6" fill="#0f172a"/>
+  <rect x="630" y="458" width="210" height="42" rx="6" fill="#4c1d95" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="735" y="477" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Search Engine</text>
+  <text x="735" y="492" font-size="8" fill="#94a3b8" text-anchor="middle">Elasticsearch</text>
+
+  <rect x="855" y="458" width="205" height="42" rx="6" fill="#0f172a"/>
+  <rect x="855" y="458" width="205" height="42" rx="6" fill="#4c1d95" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="957" y="477" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Job Scheduler</text>
+  <text x="957" y="492" font-size="8" fill="#94a3b8" text-anchor="middle">任务调度 · XXL-Job</text>
+
+  <!-- ============ 箭头 L4 → L5 ============ -->
+  <line x1="620" y1="510" x2="620" y2="531" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="614,529 620,540 626,529" fill="#fb923c"/>
+  <text x="635" y="528" font-size="8" fill="#94a3b8">持久化</text>
+
+  <!-- ============ Layer 5: 数据存储层 (violet,深一点) ============ -->
+  <rect x="160" y="540" width="920" height="90" rx="10" fill="#4c1d95" fill-opacity="0.4" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="172" y="558" font-size="11" font-weight="700" fill="#a78bfa">数据存储层 · Data Storage Layer</text>
+
+  <rect x="180" y="568" width="200" height="52" rx="6" fill="#0f172a"/>
+  <rect x="180" y="568" width="200" height="52" rx="6" fill="#4c1d95" fill-opacity="0.6" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="280" y="590" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">MySQL Cluster</text>
+  <text x="280" y="606" font-size="9" fill="#94a3b8" text-anchor="middle">关系型 · 主数据</text>
+
+  <rect x="400" y="568" width="200" height="52" rx="6" fill="#0f172a"/>
+  <rect x="400" y="568" width="200" height="52" rx="6" fill="#4c1d95" fill-opacity="0.6" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="500" y="590" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">MongoDB</text>
+  <text x="500" y="606" font-size="9" fill="#94a3b8" text-anchor="middle">文档型 · 详情/评价</text>
+
+  <rect x="620" y="568" width="200" height="52" rx="6" fill="#0f172a"/>
+  <rect x="620" y="568" width="200" height="52" rx="6" fill="#4c1d95" fill-opacity="0.6" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="720" y="590" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Object Storage</text>
+  <text x="720" y="606" font-size="9" fill="#94a3b8" text-anchor="middle">对象存储 · OSS</text>
+
+  <rect x="840" y="568" width="220" height="52" rx="6" fill="#0f172a"/>
+  <rect x="840" y="568" width="220" height="52" rx="6" fill="#4c1d95" fill-opacity="0.6" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="950" y="590" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">ClickHouse</text>
+  <text x="950" y="606" font-size="9" fill="#94a3b8" text-anchor="middle">分析型 · 埋点/报表</text>
+
+  <!-- ============ 底部基座:标准规范体系 (amber) ============ -->
+  <rect x="160" y="650" width="920" height="50" rx="8" fill="#78350f" fill-opacity="0.3" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="180" y="680" font-size="12" font-weight="700" fill="#fbbf24">标准规范体系 · Standards</text>
+  <text x="620" y="680" font-size="10" fill="#fde68a" text-anchor="middle">数据规范  ·  接口规范  ·  安全规范  ·  部署规范</text>
+
+  <!-- ============ 图例 ============ -->
+  <rect x="200" y="708" width="10" height="10" fill="#083344" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1"/>
+  <text x="216" y="717" font-size="8" fill="#94a3b8">接入</text>
+  <rect x="260" y="708" width="10" height="10" fill="#78350f" fill-opacity="0.4" stroke="#fb923c" stroke-width="1"/>
+  <text x="276" y="717" font-size="8" fill="#94a3b8">网关/连接</text>
+  <rect x="340" y="708" width="10" height="10" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="1"/>
+  <text x="356" y="717" font-size="8" fill="#94a3b8">业务服务</text>
+  <rect x="412" y="708" width="10" height="10" fill="#4c1d95" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1"/>
+  <text x="428" y="717" font-size="8" fill="#94a3b8">中间件/存储</text>
+  <rect x="500" y="708" width="10" height="10" fill="#881338" fill-opacity="0.4" stroke="#fb7185" stroke-width="1"/>
+  <text x="516" y="717" font-size="8" fill="#94a3b8">安全</text>
+  <rect x="550" y="708" width="10" height="10" fill="#78350f" fill-opacity="0.3" stroke="#fbbf24" stroke-width="1"/>
+  <text x="566" y="717" font-size="8" fill="#94a3b8">规范</text>
+  <line x1="610" y1="713" x2="630" y2="713" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+  <text x="636" y="717" font-size="8" fill="#94a3b8">横切关系</text>
+</svg>

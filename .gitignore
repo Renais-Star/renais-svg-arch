@@ -1,0 +1,16 @@
+# 依赖
+node_modules/
+
+# 运行时
+*.log
+bun.lockb
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 临时文件
+*.tmp

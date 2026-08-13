@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 480" font-family="'JetBrains Mono','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="660" height="480" fill="#0f172a"/>
+  <text x="330" y="30" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Icon Library Preview · 图标库预览</text>
+
+  <!-- ===== Row 1 (y center = 110, icon at y=92, label at y=140) ===== -->
+
+  <!-- 1. database @ (60,92) -->
+  <g transform="translate(60,92) scale(1.0)" color="#22d3ee">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
+      <path d="M4,5 L4,19 C4,20.4 7.6,21.5 12,21.5 C16.4,21.5 20,20.4 20,19 L20,5"/>
+      <path d="M4,10 C4,11.4 7.6,12.5 12,12.5 C16.4,12.5 20,11.4 20,10"/>
+      <path d="M4,15 C4,16.4 7.6,17.5 12,17.5 C16.4,17.5 20,16.4 20,15"/>
+    </g>
+  </g>
+  <text x="72" y="148" font-size="9" fill="#94a3b8" text-anchor="middle">database</text>
+
+  <!-- 2. server @ (180,92) -->
+  <g transform="translate(180,92) scale(1.0)" color="#22d3ee">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="7" rx="1.5"/>
+      <rect x="3" y="13" width="18" height="7" rx="1.5"/>
+      <circle cx="6.5" cy="7.5" r="0.4" fill="currentColor" stroke="none"/>
+      <line x1="10" y1="7.5" x2="14" y2="7.5"/>
+      <circle cx="6.5" cy="16.5" r="0.4" fill="currentColor" stroke="none"/>
+      <line x1="10" y1="16.5" x2="14" y2="16.5"/>
+    </g>
+  </g>
+  <text x="192" y="148" font-size="9" fill="#94a3b8" text-anchor="middle">server</text>
+
+  <!-- 3. cloud @ (300,92) -->
+  <g transform="translate(300,92) scale(1.0)" color="#22d3ee">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7,18 C4.2,18 2,15.8 2,13 C2,10.5 3.8,8.5 6.2,8.1 C7,5.7 9.3,4 12,4 C15.2,4 17.8,6.5 18,9.6 C20.2,10.1 22,12.1 22,14.5 C22,17.5 19.5,20 16.5,20 L7,20 C6.7,20 7.2,18 7,18 Z"/>
+    </g>
+  </g>
+  <text x="312" y="148" font-size="9" fill="#94a3b8" text-anchor="middle">cloud</text>
+
+  <!-- 4. api-gateway @ (420,92) -->
+  <g transform="translate(420,92) scale(1.0)" color="#22d3ee">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,12 L5,12" stroke-opacity="0.7"/>
+      <path d="M4,11 L5,12 L4,13" stroke-opacity="0.7"/>
+      <path d="M6,4 L6,20"/>
+      <path d="M18,4 L18,20"/>
+      <path d="M6,4 L18,4"/>
+      <path d="M6,20 L18,20"/>
+      <path d="M6,7 L18,7"/>
+      <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+      <line x1="12" y1="8" x2="12" y2="11"/>
+      <line x1="12" y1="13" x2="12" y2="16"/>
+      <path d="M19,12 L22,12" stroke-opacity="0.7"/>
+      <path d="M20,11 L22,12 L20,13" stroke-opacity="0.7"/>
+    </g>
+  </g>
+  <text x="432" y="148" font-size="9" fill="#94a3b8" text-anchor="middle">api-gateway</text>
+
+  <!-- 5. cache @ (540,92) -->
+  <g transform="translate(540,92) scale(1.0)" color="#22d3ee">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4" width="19" height="16" rx="2"/>
+      <path d="M13,7 L8.5,13 L11.5,13 L10.5,17 L15.5,11 L12.5,11 L13,7 Z" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="552" y="148" font-size="9" fill="#94a3b8" text-anchor="middle">cache</text>
+
+  <!-- ===== Row 2 (y center = 210, icon at y=192) ===== -->
+
+  <!-- 6. message-queue @ (60,192) -->
+  <g transform="translate(60,192) scale(1.0)" color="#34d399">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="9.5" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="17" y="9" width="5" height="6" rx="0.8"/>
+      <path d="M7,12 L9.5,12"/>
+      <path d="M14.5,12 L17,12"/>
+    </g>
+  </g>
+  <text x="72" y="248" font-size="9" fill="#94a3b8" text-anchor="middle">message-queue</text>
+
+  <!-- 7. load-balancer @ (180,192) -->
+  <g transform="translate(180,192) scale(1.0)" color="#34d399">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="5" cy="12" r="2.2"/>
+      <circle cx="19" cy="5" r="2"/>
+      <circle cx="19" cy="12" r="2"/>
+      <circle cx="19" cy="19" r="2"/>
+      <path d="M7,12 L11,12"/>
+      <path d="M11,12 L17,5"/>
+      <path d="M11,12 L17,12"/>
+      <path d="M11,12 L17,19"/>
+      <circle cx="11" cy="12" r="0.5" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="192" y="248" font-size="9" fill="#94a3b8" text-anchor="middle">load-balancer</text>
+
+  <!-- 8. container @ (300,192) -->
+  <g transform="translate(300,192) scale(1.0)" color="#34d399">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12,2.5 L21,7.5 L21,16.5 L12,21.5 L3,16.5 L3,7.5 Z"/>
+      <path d="M3,7.5 L12,12.5 L21,7.5"/>
+      <path d="M12,12.5 L12,21.5"/>
+      <path d="M7.5,5 L16.5,10"/>
+    </g>
+  </g>
+  <text x="312" y="248" font-size="9" fill="#94a3b8" text-anchor="middle">container</text>
+
+  <!-- 9. function @ (420,192) -->
+  <g transform="translate(420,192) scale(1.0)" color="#34d399">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7,5 L11,13 L16,5"/>
+      <path d="M11,13 L16,20"/>
+      <path d="M13.5,15.5 L17,20"/>
+    </g>
+  </g>
+  <text x="432" y="248" font-size="9" fill="#94a3b8" text-anchor="middle">function</text>
+
+  <!-- 10. security-lock @ (540,192) -->
+  <g transform="translate(540,192) scale(1.0)" color="#34d399">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4.5" y="11" width="15" height="10" rx="2"/>
+      <path d="M7.5,11 L7.5,7.5 C7.5,5 9.5,3 12,3 C14.5,3 16.5,5 16.5,7.5 L16.5,11"/>
+      <line x1="12" y1="14.5" x2="12" y2="17.5"/>
+      <circle cx="12" cy="14.5" r="1.4"/>
+    </g>
+  </g>
+  <text x="552" y="248" font-size="9" fill="#94a3b8" text-anchor="middle">security-lock</text>
+
+  <!-- ===== Row 3 (y center = 310, icon at y=292) ===== -->
+
+  <!-- 11. monitoring @ (60,292) -->
+  <g transform="translate(60,292) scale(1.0)" color="#a78bfa">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3,3 L3,20 L21,20"/>
+      <path d="M6,16 L10,12 L13,14 L18,7"/>
+      <circle cx="10" cy="12" r="0.6" fill="currentColor" stroke="none"/>
+      <circle cx="13" cy="14" r="0.6" fill="currentColor" stroke="none"/>
+      <circle cx="18" cy="7" r="0.6" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="72" y="348" font-size="9" fill="#94a3b8" text-anchor="middle">monitoring</text>
+
+  <!-- 12. log @ (180,292) -->
+  <g transform="translate(180,292) scale(1.0)" color="#a78bfa">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5,2.5 L15,2.5 L19,6.5 L19,21.5 L5,21.5 Z"/>
+      <path d="M15,2.5 L15,6.5 L19,6.5"/>
+      <line x1="8" y1="11" x2="16" y2="11"/>
+      <line x1="8" y1="14" x2="16" y2="14"/>
+      <line x1="8" y1="17" x2="13" y2="17"/>
+    </g>
+  </g>
+  <text x="192" y="348" font-size="9" fill="#94a3b8" text-anchor="middle">log</text>
+
+  <!-- 13. user @ (300,292) -->
+  <g transform="translate(300,292) scale(1.0)" color="#a78bfa">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4,21 C4,16.5 7.5,13 12,13 C16.5,13 20,16.5 20,21"/>
+    </g>
+  </g>
+  <text x="312" y="348" font-size="9" fill="#94a3b8" text-anchor="middle">user</text>
+
+  <!-- 14. browser @ (420,292) -->
+  <g transform="translate(420,292) scale(1.0)" color="#a78bfa">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4" width="19" height="16" rx="2"/>
+      <line x1="2.5" y1="8" x2="21.5" y2="8"/>
+      <circle cx="5.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <circle cx="7.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <circle cx="9.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <path d="M6,14 L10,14"/>
+      <path d="M6,17 L14,17"/>
+    </g>
+  </g>
+  <text x="432" y="348" font-size="9" fill="#94a3b8" text-anchor="middle">browser</text>
+
+  <!-- 15. mobile @ (540,292) -->
+  <g transform="translate(540,292) scale(1.0)" color="#a78bfa">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="2.5" width="11" height="19" rx="2"/>
+      <line x1="10" y1="18.5" x2="14" y2="18.5"/>
+      <line x1="9" y1="5.5" x2="15" y2="5.5" stroke-opacity="0.5"/>
+    </g>
+  </g>
+  <text x="552" y="348" font-size="9" fill="#94a3b8" text-anchor="middle">mobile</text>
+
+  <!-- ===== Row 4 (y center = 410, icon at y=392) ===== -->
+
+  <!-- 16. ai-chip @ (60,392) -->
+  <g transform="translate(60,392) scale(1.0)" color="#fbbf24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="6" width="12" height="12" rx="1.5"/>
+      <line x1="9" y1="3" x2="9" y2="6"/>
+      <line x1="12" y1="3" x2="12" y2="6"/>
+      <line x1="15" y1="3" x2="15" y2="6"/>
+      <line x1="9" y1="18" x2="9" y2="21"/>
+      <line x1="12" y1="18" x2="12" y2="21"/>
+      <line x1="15" y1="18" x2="15" y2="21"/>
+      <line x1="3" y1="9" x2="6" y2="9"/>
+      <line x1="3" y1="12" x2="6" y2="12"/>
+      <line x1="3" y1="15" x2="6" y2="15"/>
+      <line x1="18" y1="9" x2="21" y2="9"/>
+      <line x1="18" y1="12" x2="21" y2="12"/>
+      <line x1="18" y1="15" x2="21" y2="15"/>
+      <circle cx="10.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+      <circle cx="13.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+      <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="72" y="448" font-size="9" fill="#94a3b8" text-anchor="middle">ai-chip</text>
+
+  <!-- 17. storage-disk @ (180,392) -->
+  <g transform="translate(180,392) scale(1.0)" color="#fbbf24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="3"/>
+      <circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none"/>
+      <path d="M16.5,7.5 L14,10"/>
+    </g>
+  </g>
+  <text x="192" y="448" font-size="9" fill="#94a3b8" text-anchor="middle">storage-disk</text>
+
+  <!-- 18. network @ (300,392) -->
+  <g transform="translate(300,392) scale(1.0)" color="#fbbf24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="5" r="2"/>
+      <circle cx="5" cy="18" r="2"/>
+      <circle cx="19" cy="18" r="2"/>
+      <circle cx="12" cy="13" r="1.4" fill="currentColor" stroke="none"/>
+      <line x1="12" y1="7" x2="12" y2="11.5"/>
+      <line x1="10.5" y1="11" x2="6.5" y2="16"/>
+      <line x1="13.5" y1="11" x2="17.5" y2="16"/>
+      <line x1="7" y1="18" x2="17" y2="18" stroke-opacity="0.4"/>
+    </g>
+  </g>
+  <text x="312" y="448" font-size="9" fill="#94a3b8" text-anchor="middle">network</text>
+
+  <!-- 19. cdn @ (420,392) -->
+  <g transform="translate(420,392) scale(1.0)" color="#fbbf24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <ellipse cx="12" cy="12" rx="4" ry="9"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <path d="M5,8 L19,8" stroke-opacity="0.5"/>
+      <path d="M5,16 L19,16" stroke-opacity="0.5"/>
+      <circle cx="20" cy="5" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="4" cy="19" r="1.2" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="432" y="448" font-size="9" fill="#94a3b8" text-anchor="middle">cdn</text>
+
+  <!-- 20. firewall @ (540,392) -->
+  <g transform="translate(540,392) scale(1.0)" color="#fbbf24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="5" width="19" height="14" rx="1"/>
+      <line x1="2.5" y1="9.5" x2="21.5" y2="9.5"/>
+      <line x1="2.5" y1="14.5" x2="21.5" y2="14.5"/>
+      <line x1="8.5" y1="5" x2="8.5" y2="9.5"/>
+      <line x1="15.5" y1="5" x2="15.5" y2="9.5"/>
+      <line x1="5" y1="9.5" x2="5" y2="14.5"/>
+      <line x1="12" y1="9.5" x2="12" y2="14.5"/>
+      <line x1="19" y1="9.5" x2="19" y2="14.5"/>
+      <line x1="8.5" y1="14.5" x2="8.5" y2="19"/>
+      <line x1="15.5" y1="14.5" x2="15.5" y2="19"/>
+    </g>
+  </g>
+  <text x="552" y="448" font-size="9" fill="#94a3b8" text-anchor="middle">firewall</text>
+</svg>

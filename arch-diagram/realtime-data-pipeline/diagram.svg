@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 440" font-family="'JetBrains Mono','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== 背景 ===== -->
+  <rect width="1460" height="440" fill="#FFFFFF"/>
+  <rect width="1460" height="440" fill="url(#grid)"/>
+
+  <!-- ===== 总标题 + 数据流标注 ===== -->
+  <text x="730" y="28" font-size="16" font-weight="700" fill="#1e293b" text-anchor="middle">实时数据管道 · Real-time Data Pipeline</text>
+  <text x="730" y="46" font-size="9" fill="#64748b" text-anchor="middle">端到端延迟 &lt; 5s   ·   峰值吞吐 10 万 TPS   ·   流向：左 → 右</text>
+
+  <!-- ============ Stage 1: 数据源 (cyan) ============ -->
+  <rect x="30" y="70" width="200" height="310" rx="10" fill="#e0f7fa" fill-opacity="0.6" stroke="#00acc1" stroke-width="1.5"/>
+  <text x="42" y="92" font-size="11" font-weight="700" fill="#00acc1">数据源 · Source</text>
+
+  <!-- 组件 1.1: MySQL Binlog -->
+  <rect x="40" y="110" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.2"/>
+  <g transform="translate(52,123) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
+      <path d="M4,5 L4,19 C4,20.4 7.6,21.5 12,21.5 C16.4,21.5 20,20.4 20,19 L20,5"/>
+      <path d="M4,10 C4,11.4 7.6,12.5 12,12.5 C16.4,12.5 20,11.4 20,10"/>
+      <path d="M4,15 C4,16.4 7.6,17.5 12,17.5 C16.4,17.5 20,16.4 20,15"/>
+    </g>
+  </g>
+  <text x="86" y="132" font-size="10" font-weight="600" fill="#1e293b">MySQL Binlog</text>
+  <text x="86" y="146" font-size="8" fill="#64748b">业务库变更</text>
+
+  <!-- 组件 1.2: App Log -->
+  <rect x="40" y="164" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.2"/>
+  <g transform="translate(52,177) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5,2.5 L15,2.5 L19,6.5 L19,21.5 L5,21.5 Z"/>
+      <path d="M15,2.5 L15,6.5 L19,6.5"/>
+      <line x1="8" y1="11" x2="16" y2="11"/>
+      <line x1="8" y1="14" x2="16" y2="14"/>
+      <line x1="8" y1="17" x2="13" y2="17"/>
+    </g>
+  </g>
+  <text x="86" y="186" font-size="10" font-weight="600" fill="#1e293b">App Log</text>
+  <text x="86" y="200" font-size="8" fill="#64748b">应用日志</text>
+
+  <!-- 组件 1.3: IoT Sensor -->
+  <rect x="40" y="218" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.2"/>
+  <g transform="translate(52,231) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="5" r="2"/>
+      <circle cx="5" cy="18" r="2"/>
+      <circle cx="19" cy="18" r="2"/>
+      <circle cx="12" cy="13" r="1.4" fill="currentColor" stroke="none"/>
+      <line x1="12" y1="7" x2="12" y2="11.5"/>
+      <line x1="10.5" y1="11" x2="6.5" y2="16"/>
+      <line x1="13.5" y1="11" x2="17.5" y2="16"/>
+      <line x1="7" y1="18" x2="17" y2="18" stroke-opacity="0.4"/>
+    </g>
+  </g>
+  <text x="86" y="240" font-size="10" font-weight="600" fill="#1e293b">IoT Sensor</text>
+  <text x="86" y="254" font-size="8" fill="#64748b">设备上报</text>
+
+  <!-- 组件 1.4: API Webhook -->
+  <rect x="40" y="272" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.2"/>
+  <g transform="translate(52,285) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6,4 L6,20"/>
+      <path d="M18,4 L18,20"/>
+      <path d="M6,4 L18,4"/>
+      <path d="M6,20 L18,20"/>
+      <path d="M6,7 L18,7"/>
+      <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+      <line x1="12" y1="8" x2="12" y2="11"/>
+      <line x1="12" y1="13" x2="12" y2="16"/>
+    </g>
+  </g>
+  <text x="86" y="294" font-size="10" font-weight="600" fill="#1e293b">API Webhook</text>
+  <text x="86" y="308" font-size="8" fill="#64748b">第三方回调</text>
+
+  <!-- 列中心 y = 70 + 310/2 = 225 -->
+
+  <!-- ============ 箭头 Stage1 → Stage2 ============ -->
+  <line x1="230" y1="225" x2="321" y2="225" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="319,219 330,225 319,231" fill="#fb923c"/>
+  <text x="275" y="218" font-size="8" fill="#64748b" text-anchor="middle">采集</text>
+
+  <!-- ============ Stage 2: 接入采集 (emerald) ============ -->
+  <rect x="330" y="100" width="200" height="250" rx="10" fill="#e8f5e9" fill-opacity="0.6" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="342" y="122" font-size="11" font-weight="700" fill="#2ecc71">接入采集 · Ingest</text>
+
+  <!-- 组件 2.1: Filebeat -->
+  <rect x="340" y="140" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.2"/>
+  <g transform="translate(352,153) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="9.5" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="17" y="9" width="5" height="6" rx="0.8"/>
+      <path d="M7,12 L9.5,12"/>
+      <path d="M14.5,12 L17,12"/>
+    </g>
+  </g>
+  <text x="386" y="162" font-size="10" font-weight="600" fill="#1e293b">Filebeat</text>
+  <text x="386" y="176" font-size="8" fill="#64748b">日志采集</text>
+
+  <!-- 组件 2.2: Flume -->
+  <rect x="340" y="194" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.2"/>
+  <g transform="translate(352,207) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7,18 C4.2,18 2,15.8 2,13 C2,10.5 3.8,8.5 6.2,8.1 C7,5.7 9.3,4 12,4 C15.2,4 17.8,6.5 18,9.6 C20.2,10.1 22,12.1 22,14.5 C22,17.5 19.5,20 16.5,20 L7,20 C6.7,20 7.2,18 7,18 Z"/>
+    </g>
+  </g>
+  <text x="386" y="216" font-size="10" font-weight="600" fill="#1e293b">Flume</text>
+  <text x="386" y="230" font-size="8" fill="#64748b">事件聚合</text>
+
+  <!-- 组件 2.3: MQTT Broker -->
+  <rect x="340" y="248" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.2"/>
+  <g transform="translate(352,261) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,12 L5,12" stroke-opacity="0.7"/>
+      <path d="M4,11 L5,12 L4,13" stroke-opacity="0.7"/>
+      <path d="M6,4 L6,20"/>
+      <path d="M18,4 L18,20"/>
+      <path d="M6,4 L18,4"/>
+      <path d="M6,20 L18,20"/>
+      <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+      <path d="M19,12 L22,12" stroke-opacity="0.7"/>
+      <path d="M20,11 L22,12 L20,13" stroke-opacity="0.7"/>
+    </g>
+  </g>
+  <text x="386" y="270" font-size="10" font-weight="600" fill="#1e293b">MQTT Broker</text>
+  <text x="386" y="284" font-size="8" fill="#64748b">IoT 接入</text>
+
+  <!-- 列中心 y = 100 + 250/2 = 225 ✓ -->
+
+  <!-- ============ 箭头 Stage2 → Stage3 ============ -->
+  <line x1="530" y1="225" x2="621" y2="225" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="619,219 630,225 619,231" fill="#fb923c"/>
+  <text x="575" y="218" font-size="8" fill="#64748b" text-anchor="middle">汇入</text>
+
+  <!-- ============ Stage 3: 消息总线 (orange/connector,单组件整列) ============ -->
+  <rect x="630" y="130" width="200" height="190" rx="10" fill="#fff3e0" fill-opacity="0.7" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="642" y="152" font-size="11" font-weight="700" fill="#fb923c">消息总线 · Bus</text>
+
+  <!-- 大块: Kafka Cluster -->
+  <rect x="650" y="170" width="160" height="130" rx="8" fill="#FFFFFF" stroke="#fb923c" stroke-width="1.5"/>
+  <g transform="translate(664,186) scale(1.4)" color="#fb923c">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="9.5" y="9" width="5" height="6" rx="0.8"/>
+      <rect x="17" y="9" width="5" height="6" rx="0.8"/>
+      <path d="M7,12 L9.5,12"/>
+      <path d="M14.5,12 L17,12"/>
+    </g>
+  </g>
+  <text x="730" y="230" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Kafka Cluster</text>
+  <text x="730" y="248" font-size="9" fill="#64748b" text-anchor="middle">高吞吐消息队列</text>
+  <text x="730" y="264" font-size="8" fill="#64748b" text-anchor="middle">3 broker · 分区并行</text>
+  <text x="730" y="280" font-size="8" fill="#fb923c" text-anchor="middle">10 万 TPS</text>
+
+  <!-- 列中心 y = 130 + 190/2 = 225 ✓ -->
+
+  <!-- ============ 箭头 Stage3 → Stage4 ============ -->
+  <line x1="830" y1="225" x2="921" y2="225" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="919,219 930,225 919,231" fill="#fb923c"/>
+  <text x="875" y="218" font-size="8" fill="#64748b" text-anchor="middle">订阅</text>
+
+  <!-- ============ Stage 4: 流处理 (violet) ============ -->
+  <rect x="930" y="100" width="200" height="250" rx="10" fill="#ede7f6" fill-opacity="0.6" stroke="#7e57c2" stroke-width="1.5"/>
+  <text x="942" y="122" font-size="11" font-weight="700" fill="#7e57c2">流处理 · Process</text>
+
+  <!-- 组件 4.1: Flink -->
+  <rect x="940" y="140" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#7e57c2" stroke-width="1.2"/>
+  <g transform="translate(952,153) scale(0.7)" color="#7e57c2">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7,5 L11,13 L16,5"/>
+      <path d="M11,13 L16,20"/>
+      <path d="M13.5,15.5 L17,20"/>
+    </g>
+  </g>
+  <text x="986" y="162" font-size="10" font-weight="600" fill="#1e293b">Flink</text>
+  <text x="986" y="176" font-size="8" fill="#64748b">实时 ETL</text>
+
+  <!-- 组件 4.2: Rule Engine -->
+  <rect x="940" y="194" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#7e57c2" stroke-width="1.2"/>
+  <g transform="translate(952,207) scale(0.7)" color="#7e57c2">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="6" width="12" height="12" rx="1.5"/>
+      <line x1="9" y1="3" x2="9" y2="6"/>
+      <line x1="12" y1="3" x2="12" y2="6"/>
+      <line x1="15" y1="3" x2="15" y2="6"/>
+      <line x1="9" y1="18" x2="9" y2="21"/>
+      <line x1="12" y1="18" x2="12" y2="21"/>
+      <line x1="15" y1="18" x2="15" y2="21"/>
+      <line x1="3" y1="9" x2="6" y2="9"/>
+      <line x1="3" y1="12" x2="6" y2="12"/>
+      <line x1="3" y1="15" x2="6" y2="15"/>
+      <line x1="18" y1="9" x2="21" y2="9"/>
+      <line x1="18" y1="12" x2="21" y2="12"/>
+      <line x1="18" y1="15" x2="21" y2="15"/>
+      <circle cx="10.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+      <circle cx="13.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+      <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="986" y="216" font-size="10" font-weight="600" fill="#1e293b">Rule Engine</text>
+  <text x="986" y="230" font-size="8" fill="#64748b">规则计算 · Python</text>
+
+  <!-- 组件 4.3: Enrichment -->
+  <rect x="940" y="248" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#7e57c2" stroke-width="1.2"/>
+  <g transform="translate(952,261) scale(0.7)" color="#7e57c2">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3,3 L3,20 L21,20"/>
+      <path d="M6,16 L10,12 L13,14 L18,7"/>
+      <circle cx="10" cy="12" r="0.6" fill="currentColor" stroke="none"/>
+      <circle cx="13" cy="14" r="0.6" fill="currentColor" stroke="none"/>
+      <circle cx="18" cy="7" r="0.6" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="986" y="270" font-size="10" font-weight="600" fill="#1e293b">Enrichment</text>
+  <text x="986" y="284" font-size="8" fill="#64748b">维度关联</text>
+
+  <!-- 列中心 y = 100 + 250/2 = 225 ✓ -->
+
+  <!-- ============ 箭头 Stage4 → Stage5 ============ -->
+  <line x1="1130" y1="225" x2="1221" y2="225" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="1219,219 1230,225 1219,231" fill="#fb923c"/>
+  <text x="1175" y="218" font-size="8" fill="#64748b" text-anchor="middle">分发</text>
+
+  <!-- ============ Stage 5: 落地应用 (amber + rose 混合) ============ -->
+  <rect x="1230" y="70" width="200" height="310" rx="10" fill="#fff8e1" fill-opacity="0.6" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="1242" y="92" font-size="11" font-weight="700" fill="#f9a825">落地应用 · Sink</text>
+
+  <!-- 组件 5.1: ClickHouse -->
+  <rect x="1240" y="110" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.2"/>
+  <g transform="translate(1252,123) scale(0.7)" color="#f9a825">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
+      <path d="M4,5 L4,19 C4,20.4 7.6,21.5 12,21.5 C16.4,21.5 20,20.4 20,19 L20,5"/>
+      <path d="M4,10 C4,11.4 7.6,12.5 12,12.5 C16.4,12.5 20,11.4 20,10"/>
+      <path d="M4,15 C4,16.4 7.6,17.5 12,17.5 C16.4,17.5 20,16.4 20,15"/>
+    </g>
+  </g>
+  <text x="1286" y="132" font-size="10" font-weight="600" fill="#1e293b">ClickHouse</text>
+  <text x="1286" y="146" font-size="8" fill="#64748b">OLAP 分析</text>
+
+  <!-- 组件 5.2: Redis -->
+  <rect x="1240" y="164" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.2"/>
+  <g transform="translate(1252,177) scale(0.7)" color="#f9a825">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4" width="19" height="16" rx="2"/>
+      <path d="M13,7 L8.5,13 L11.5,13 L10.5,17 L15.5,11 L12.5,11 L13,7 Z" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="1286" y="186" font-size="10" font-weight="600" fill="#1e293b">Redis</text>
+  <text x="1286" y="200" font-size="8" fill="#64748b">实时大盘</text>
+
+  <!-- 组件 5.3: Alert -->
+  <rect x="1240" y="218" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#e53935" stroke-width="1.2"/>
+  <g transform="translate(1252,231) scale(0.7)" color="#e53935">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3,3 L3,20 L21,20"/>
+      <path d="M6,16 L10,12 L13,14 L18,7"/>
+    </g>
+  </g>
+  <text x="1286" y="240" font-size="10" font-weight="600" fill="#1e293b">Alert Service</text>
+  <text x="1286" y="254" font-size="8" fill="#64748b">告警通知</text>
+
+  <!-- 组件 5.4: BI Report -->
+  <rect x="1240" y="272" width="180" height="46" rx="6" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.2"/>
+  <g transform="translate(1252,285) scale(0.7)" color="#f9a825">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4" width="19" height="16" rx="2"/>
+      <line x1="2.5" y1="8" x2="21.5" y2="8"/>
+      <circle cx="5.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <circle cx="7.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <circle cx="9.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <path d="M6,14 L10,14"/>
+      <path d="M6,17 L14,17"/>
+    </g>
+  </g>
+  <text x="1286" y="294" font-size="10" font-weight="600" fill="#1e293b">BI Report</text>
+  <text x="1286" y="308" font-size="8" fill="#64748b">报表展示</text>
+
+  <!-- 列中心 y = 70 + 310/2 = 225 ✓ -->
+
+  <!-- ===== 底部说明 ===== -->
+  <text x="730" y="412" font-size="9" fill="#94a3b8" text-anchor="middle">每个阶段解耦 · 总线统一缓冲 · 流处理可水平扩展 · 数据流方向 左 → 右</text>
+</svg>

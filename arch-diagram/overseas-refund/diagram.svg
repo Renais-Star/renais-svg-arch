@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1640" font-family="'JetBrains Mono','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== 背景 ===== -->
+  <rect width="1050" height="1640" fill="#FFFFFF"/>
+  <rect width="1050" height="1640" fill="url(#grid)"/>
+
+  <!-- ===== 总标题 ===== -->
+  <text x="525" y="28" font-size="16" font-weight="700" fill="#1e293b" text-anchor="middle">海外电商退款流程 · Overseas Refund Flow</text>
+  <text x="525" y="46" font-size="9" fill="#64748b" text-anchor="middle">纵向泳道  ·  完整流程图（含决策菱形 · 起止节点 · 汇聚 · 回环）</text>
+
+  <!-- ===== 泳道标题行 ===== -->
+  <rect x="30" y="60" width="1000" height="44" rx="6" fill="#1e293b"/>
+  <text x="130" y="88" font-size="12" font-weight="700" fill="#00acc1" text-anchor="middle">买家 · Buyer</text>
+  <text x="330" y="88" font-size="12" font-weight="700" fill="#2ecc71" text-anchor="middle">客服 · Service</text>
+  <text x="530" y="88" font-size="12" font-weight="700" fill="#7e57c2" text-anchor="middle">风控/合规 · Risk</text>
+  <text x="730" y="88" font-size="12" font-weight="700" fill="#f9a825" text-anchor="middle">财务 · Finance</text>
+  <text x="930" y="88" font-size="12" font-weight="700" fill="#42a5f5" text-anchor="middle">仓储/物流 · WH</text>
+
+  <!-- ===== 5 条泳道主体 (y=104-1564) ===== -->
+  <rect x="30" y="104" width="200" height="1460" fill="#e0f7fa" fill-opacity="0.5"/>
+  <rect x="230" y="104" width="200" height="1460" fill="#e8f5e9" fill-opacity="0.5"/>
+  <rect x="430" y="104" width="200" height="1460" fill="#ede7f6" fill-opacity="0.5"/>
+  <rect x="630" y="104" width="200" height="1460" fill="#fff8e1" fill-opacity="0.5"/>
+  <rect x="830" y="104" width="200" height="1460" fill="#e3f2fd" fill-opacity="0.5"/>
+
+  <line x1="230" y1="60" x2="230" y2="1564" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="430" y1="60" x2="430" y2="1564" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="630" y1="60" x2="630" y2="1564" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="830" y1="60" x2="830" y2="1564" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- 步骤行横向虚线 -->
+  <line x1="30" y1="219" x2="1030" y2="219" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="334" x2="1030" y2="334" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="449" x2="1030" y2="449" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="564" x2="1030" y2="564" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="679" x2="1030" y2="679" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="794" x2="1030" y2="794" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="909" x2="1030" y2="909" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1024" x2="1030" y2="1024" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1139" x2="1030" y2="1139" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1254" x2="1030" y2="1254" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1369" x2="1030" y2="1369" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+  <line x1="30" y1="1484" x2="1030" y2="1484" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="3,3"/>
+
+  <rect x="30" y="60" width="1000" height="1504" rx="6" fill="none" stroke="#94a3b8" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- ============ 连接箭头 ============ -->
+  <!-- 节点框边: 矩形90高 cy±45; 胶囊44高 cy±22; 菱形80高顶点cy±40; 圆点r8 -->
+
+  <!-- S→1: 开始(130,161.5底183.5)→发起退款(130,276.5顶231.5) 同道向下 -->
+  <line x1="130" y1="183.5" x2="130" y2="222.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,220.5 130,231.5 136,220.5" fill="#fb923c"/>
+
+  <!-- 1→2: (130,321.5)→(330,391.5顶346.5) 跨道右下 -->
+  <path d="M 130,321.5 L 130,334 L 330,334 L 330,337.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,335.5 330,346.5 336,335.5" fill="#fb923c"/>
+
+  <!-- 2→3: (330,436.5)→(530,506.5顶461.5) 跨道右下 -->
+  <path d="M 330,436.5 L 330,449 L 530,449 L 530,452.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="524,450.5 530,461.5 536,450.5" fill="#fb923c"/>
+
+  <!-- 3→D1菱形: 风控审核(530,551.5底)→D1菱形顶点(530,621.5顶581.5) 同道向下
+       D1菱形 100×80，中心(530,621.5)，上顶点(530,581.5) -->
+  <line x1="530" y1="551.5" x2="530" y2="572.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="524,570.5 530,581.5 536,570.5" fill="#fb923c"/>
+
+  <!-- D1菱形(530,621.5)→4退款决策(330,736.5顶691.5) 是分支：右顶点(580,621.5)出，向左下 -->
+  <!-- D1右顶点(580,621.5)，但向客服(左)走，应该从左顶点(480,621.5)出 -->
+  <path d="M 480,621.5 L 380,621.5 L 330,621.5 L 330,682.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,680.5 330,691.5 336,680.5" fill="#fb923c"/>
+  <text x="395" y="614" font-size="10" font-weight="700" fill="#2ecc71">是</text>
+
+  <!-- D1菱形(530,621.5)→回环到1(驳回) 否分支：下顶点(530,661.5)出，走外侧 -->
+  <!-- 这条是回环虚线，放在后面单独画 -->
+
+  <!-- 4→D2菱形: 退款决策(330,781.5底)→D2菱形顶点(330,851.5顶811.5) 同道向下 -->
+  <!-- D2菱形 100×80，中心(330,851.5)，上顶点(330,811.5) -->
+  <line x1="330" y1="781.5" x2="330" y2="802.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="324,800.5 330,811.5 336,800.5" fill="#fb923c"/>
+
+  <!-- D2菱形→5跨境退货 是分支: D2右顶点(380,851.5)→5(930,966.5顶921.5) 跨4道右下 -->
+  <path d="M 380,851.5 L 930,851.5 L 930,912.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="924,910.5 930,921.5 936,910.5" fill="#fb923c"/>
+  <text x="395" y="844" font-size="10" font-weight="700" fill="#2ecc71">是</text>
+
+  <!-- 5→6: 跨境退货(930,1011.5底)→验货(930,1081.5顶1036.5) 同道向下 -->
+  <line x1="930" y1="1011.5" x2="930" y2="1027.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="924,1025.5 930,1036.5 936,1025.5" fill="#fb923c"/>
+
+  <!-- 6→汇聚M: 验货(930,1126.5底)→M圆点(730,1196.5) 跨道左下 -->
+  <!-- M圆点 r=8，中心(730,1196.5)，上边缘(730,1188.5) -->
+  <path d="M 930,1126.5 L 930,1170 L 730,1170 L 730,1180.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="724,1178.5 730,1189.5 736,1178.5" fill="#fb923c"/>
+
+  <!-- D2菱形→汇聚M 否分支(仅退款): D2下顶点(330,891.5)→M(730,1196.5左边缘722,1196.5) -->
+  <path d="M 330,891.5 L 330,1196.5 L 716,1196.5" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,4"/>
+  <polygon points="716,1190.5 727,1196.5 716,1202.5" fill="#fb923c" fill-opacity="0.6"/>
+  <text x="290" y="905" font-size="10" font-weight="700" fill="#e53935">否(仅退款)</text>
+
+  <!-- M→7: 汇聚M(730,1204.5底)→财务退款(730,1311.5顶1266.5) 同道向下 -->
+  <line x1="730" y1="1204.5" x2="730" y2="1257.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="724,1255.5 730,1266.5 736,1255.5" fill="#fb923c"/>
+
+  <!-- 7→8: 财务退款(730,1356.5底)→完成通知(130,1426.5顶1381.5) 跨3道左下 -->
+  <path d="M 730,1356.5 L 730,1369 L 130,1369 L 130,1372.5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,1370.5 130,1381.5 136,1370.5" fill="#fb923c"/>
+
+  <!-- 8→E: 完成通知(130,1471.5底)→结束椭圆(130,1541.5顶1519.5) 同道向下 -->
+  <!-- E椭圆 rx=60 ry=22，中心(130,1541.5)，顶(130,1519.5) -->
+  <line x1="130" y1="1471.5" x2="130" y2="1510.5" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="124,1508.5 130,1519.5 136,1508.5" fill="#fb923c"/>
+
+  <!-- D1 否分支：驳回回环(红虚线): D1下顶点(530,661.5)→绕右外侧→1右边(215,276.5)
+       走右侧外 x=1015，避开所有节点框。三角顶点指向步骤1框右边 -->
+  <path d="M 530,661.5 L 1015,661.5 L 1015,276.5 L 224,276.5" fill="none" stroke="#e53935" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="224,270.5 215,276.5 224,282.5" fill="#e53935"/>
+  <text x="540" y="655" font-size="9" font-weight="700" fill="#e53935">否（驳回）</text>
+  <text x="1025" y="470" font-size="9" font-style="italic" fill="#e53935" transform="rotate(-90 1025 470)">补材料后重新提交</text>
+
+  <!-- ============ 节点 ============ -->
+
+  <!-- S: 开始椭圆 (130, 161.5) 绿 -->
+  <rect x="70" y="139.5" width="120" height="44" rx="22" fill="#2ecc71" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="130" y="166" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">开始 · Start</text>
+
+  <!-- 1: 发起退款 (130, 276.5) 买家 cyan -->
+  <rect x="45" y="231.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="1.5"/>
+  <circle cx="60" cy="246.5" r="9" fill="#00acc1"/>
+  <text x="60" y="250" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <g transform="translate(121.6,242.5) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4,21 C4,16.5 7.5,13 12,13 C16.5,13 20,16.5 20,21"/>
+    </g>
+  </g>
+  <text x="130" y="280" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">发起退款</text>
+  <text x="130" y="296" font-size="9" fill="#64748b" text-anchor="middle">填原因、上传凭证</text>
+  <text x="130" y="310" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Request</text>
+
+  <!-- 2: 客服初审 (330, 391.5) 客服 emerald -->
+  <rect x="245" y="346.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.5"/>
+  <circle cx="260" cy="361.5" r="9" fill="#2ecc71"/>
+  <text x="260" y="365" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <g transform="translate(321.6,357.5) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="4" width="19" height="16" rx="2"/>
+      <line x1="2.5" y1="8" x2="21.5" y2="8"/>
+      <circle cx="5.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <circle cx="7.5" cy="6" r="0.5" fill="currentColor" stroke="none"/>
+      <path d="M6,14 L10,14"/>
+      <path d="M6,17 L14,17"/>
+    </g>
+  </g>
+  <text x="330" y="395" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">客服初审</text>
+  <text x="330" y="411" font-size="9" fill="#64748b" text-anchor="middle">资格审核、分类</text>
+  <text x="330" y="425" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Review</text>
+
+  <!-- 3: 风控审核 (530, 506.5) 风控 violet -->
+  <rect x="445" y="461.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#7e57c2" stroke-width="1.5"/>
+  <circle cx="460" cy="476.5" r="9" fill="#7e57c2"/>
+  <text x="460" y="480" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <g transform="translate(521.6,472.5) scale(0.7)" color="#7e57c2">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4.5" y="11" width="15" height="10" rx="2"/>
+      <path d="M7.5,11 L7.5,7.5 C7.5,5 9.5,3 12,3 C14.5,3 16.5,5 16.5,7.5 L16.5,11"/>
+      <line x1="12" y1="14.5" x2="12" y2="17.5"/>
+      <circle cx="12" cy="14.5" r="1.4"/>
+    </g>
+  </g>
+  <text x="530" y="510" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">风控审核</text>
+  <text x="530" y="526" font-size="9" fill="#64748b" text-anchor="middle">防欺诈、跨境合规</text>
+  <text x="530" y="540" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Risk</text>
+
+  <!-- D1: 决策菱形 风控通过？(530, 621.5) 橙 100×80 -->
+  <polygon points="530,581.5 580,621.5 530,661.5 480,621.5" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.8"/>
+  <text x="530" y="618" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">风控</text>
+  <text x="530" y="632" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">通过？</text>
+
+  <!-- 4: 退款决策 (330, 736.5) 客服 emerald -->
+  <rect x="245" y="691.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#2ecc71" stroke-width="1.5"/>
+  <circle cx="260" cy="706.5" r="9" fill="#2ecc71"/>
+  <text x="260" y="710" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+  <g transform="translate(321.6,702.5) scale(0.7)" color="#2ecc71">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="5" cy="12" r="2.2"/>
+      <circle cx="19" cy="5" r="2"/>
+      <circle cx="19" cy="12" r="2"/>
+      <circle cx="19" cy="19" r="2"/>
+      <path d="M7,12 L11,12"/>
+      <path d="M11,12 L17,5"/>
+      <path d="M11,12 L17,12"/>
+      <path d="M11,12 L17,19"/>
+    </g>
+  </g>
+  <text x="330" y="740" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">退款决策</text>
+  <text x="330" y="756" font-size="9" fill="#64748b" text-anchor="middle">批准/协商金额</text>
+  <text x="330" y="770" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Decision</text>
+
+  <!-- D2: 决策菱形 需退货？(330, 851.5) 橙 100×80 -->
+  <polygon points="330,811.5 380,851.5 330,891.5 280,851.5" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.8"/>
+  <text x="330" y="848" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">需</text>
+  <text x="330" y="862" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">退货？</text>
+
+  <!-- 5: 跨境退货 (930, 966.5) 仓储 blue -->
+  <rect x="845" y="921.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#42a5f5" stroke-width="1.5"/>
+  <circle cx="860" cy="936.5" r="9" fill="#42a5f5"/>
+  <text x="860" y="940" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <g transform="translate(921.6,932.5) scale(0.7)" color="#42a5f5">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <ellipse cx="12" cy="12" rx="4" ry="9"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <circle cx="20" cy="5" r="1.2" fill="currentColor" stroke="none"/>
+    </g>
+  </g>
+  <text x="930" y="970" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">跨境退货</text>
+  <text x="930" y="986" font-size="9" fill="#64748b" text-anchor="middle">国际物流、寄回</text>
+  <text x="930" y="1000" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Return</text>
+
+  <!-- 6: 仓储验货 (930, 1081.5) 仓储 blue -->
+  <rect x="845" y="1036.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#42a5f5" stroke-width="1.5"/>
+  <circle cx="860" cy="1051.5" r="9" fill="#42a5f5"/>
+  <text x="860" y="1055" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+  <g transform="translate(921.6,1047.5) scale(0.7)" color="#42a5f5">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12,2.5 L21,7.5 L21,16.5 L12,21.5 L3,16.5 L3,7.5 Z"/>
+      <path d="M3,7.5 L12,12.5 L21,7.5"/>
+      <path d="M12,12.5 L12,21.5"/>
+    </g>
+  </g>
+  <text x="930" y="1085" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">仓储验货</text>
+  <text x="930" y="1101" font-size="9" fill="#64748b" text-anchor="middle">收货、检查、入库</text>
+  <text x="930" y="1115" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Inspect</text>
+
+  <!-- M: 汇聚圆点 (730, 1196.5) 灰 r=8 -->
+  <circle cx="730" cy="1196.5" r="8" fill="#64748b" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="730" y="1222" font-size="9" font-style="italic" fill="#64748b" text-anchor="middle">汇合</text>
+
+  <!-- 7: 财务退款 (730, 1311.5) 财务 amber -->
+  <rect x="645" y="1266.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.5"/>
+  <circle cx="660" cy="1281.5" r="9" fill="#f9a825"/>
+  <text x="660" y="1285" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
+  <g transform="translate(721.6,1277.5) scale(0.7)" color="#f9a825">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
+      <path d="M4,5 L4,19 C4,20.4 7.6,21.5 12,21.5 C16.4,21.5 20,20.4 20,19 L20,5"/>
+      <path d="M4,10 C4,11.4 7.6,12.5 12,12.5 C16.4,12.5 20,11.4 20,10"/>
+    </g>
+  </g>
+  <text x="730" y="1315" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">财务退款</text>
+  <text x="730" y="1331" font-size="9" fill="#64748b" text-anchor="middle">原路退回、汇率结算</text>
+  <text x="730" y="1345" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Refund</text>
+
+  <!-- 8: 完成通知 (130, 1426.5) 买家 cyan -->
+  <rect x="45" y="1381.5" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#00acc1" stroke-width="2.5"/>
+  <circle cx="60" cy="1396.5" r="9" fill="#00acc1"/>
+  <text x="60" y="1400" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
+  <g transform="translate(121.6,1392.5) scale(0.7)" color="#00acc1">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="2.5" width="11" height="19" rx="2"/>
+      <line x1="10" y1="18.5" x2="14" y2="18.5"/>
+      <line x1="9" y1="5.5" x2="15" y2="5.5" stroke-opacity="0.5"/>
+    </g>
+  </g>
+  <text x="130" y="1430" font-size="11" font-weight="600" fill="#1e293b" text-anchor="middle">完成通知</text>
+  <text x="130" y="1446" font-size="9" fill="#64748b" text-anchor="middle">到账确认、评价</text>
+  <text x="130" y="1460" font-size="8" font-style="italic" fill="#94a3b8" text-anchor="middle">Notify</text>
+
+  <!-- E: 结束椭圆 (130, 1541.5) 灰 -->
+  <rect x="70" y="1519.5" width="120" height="44" rx="22" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+  <text x="130" y="1546" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">结束 · End</text>
+
+  <!-- ============ 图例 ============ -->
+  <!-- 椭圆起止 -->
+  <rect x="45" y="1595" width="28" height="16" rx="8" fill="#2ecc71"/>
+  <text x="80" y="1607" font-size="9" fill="#64748b">起止节点</text>
+  <!-- 矩形步骤 -->
+  <rect x="155" y="1595" width="28" height="16" rx="3" fill="#FFFFFF" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="190" y="1607" font-size="9" fill="#64748b">步骤</text>
+  <!-- 菱形决策 -->
+  <polygon points="245,1603 259,1595 273,1603 259,1611" fill="#FFFFFF" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="282" y="1607" font-size="9" fill="#64748b">决策</text>
+  <!-- 圆点汇聚 -->
+  <circle cx="335" cy="1603" r="6" fill="#64748b"/>
+  <text x="348" y="1607" font-size="9" fill="#64748b">汇聚</text>
+  <!-- 实线 -->
+  <line x1="400" y1="1603" x2="425" y2="1603" stroke="#fb923c" stroke-width="1.5"/>
+  <polygon points="419,1600 425,1603 419,1606" fill="#fb923c"/>
+  <text x="432" y="1607" font-size="9" fill="#64748b">主流程</text>
+  <!-- 虚线 -->
+  <line x1="495" y1="1603" x2="520" y2="1603" stroke="#fb923c" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="5,4"/>
+  <text x="527" y="1607" font-size="9" fill="#64748b">仅退款分支</text>
+  <!-- 红虚线回环 -->
+  <line x1="615" y1="1603" x2="640" y2="1603" stroke="#e53935" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="647" y="1607" font-size="9" fill="#64748b">驳回回环</text>
+</svg>
