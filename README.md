@@ -268,31 +268,3 @@ renais-svg-arch/
 ## License
 
 MIT
-
----
-
-## 📌 上传到 GitHub 后的建议设置
-
-仓库的 **About 描述** 和 **Topics 标签**是 GitHub 搜索权重最高的地方，建好仓库后务必设置：
-
-### About 描述（仓库主页右上角 ⚙️ 设置）
-
-```
-AI 生成可编辑 SVG 架构图 / 流程图，支持 PowerPoint 转形状编辑。4 风格 × 4 布局，含引导式提问与 PPT 兼容校验。
-```
-
-英文版（可选）：
-```
-AI-generated editable SVG architecture & flowchart diagrams. PowerPoint-compatible, convertible to Office shapes. 4 styles × 4 layouts with guided Q&A and PPT validation.
-```
-
-### Topics 标签（建议全加上，提升被检索概率）
-
-```
-svg  architecture-diagram  flowchart  swimlane  powerpoint  office
-diagram-generator  ai-diagram  editable-svg  tech-architecture
-system-architecture  zcode-skill  ai-agent  vector-diagram
-```
-
-> 在仓库主页点 ⚙️ → 填 Description → 加 Topics（空格分隔，每个会变成可点击的搜索标签）。
-
