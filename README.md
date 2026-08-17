@@ -2,9 +2,9 @@
 
 > 为**产品经理、售前 / 解决方案专家**打造：用 AI 对话生成专业**技术架构图、系统架构图、云架构图、数据流程图、业务流程图、泳道图**，输出纯 SVG，可直接粘进 **PowerPoint** 并**转换为可编辑形状**继续修改。几分钟把方案梳理成能见客户的配图。
 
-**English**: An AI-powered skill (works with ZCode / Claude Code / Codex) that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
+**English**: An AI-powered skill (works with ZCode / Claude Code / Codex / WorkBuddy) that generates professional **SVG architecture diagrams, flowcharts, and swimlane diagrams** via conversation. Output is pure SVG, **PowerPoint-compatible**, and can be converted to editable Office shapes. Supports layered architecture, data pipeline, hub-spoke, and swimlane layouts in 4 visual styles.
 
-一个 AI 编码工具 skill（兼容 **ZCode / Claude Code / Codex**）：**输入架构描述（文字 / Markdown / 文档），输出可直接粘进 PPT 并继续编辑的专业 SVG 架构图。** 纯 SVG 代码生成，不依赖外部 API。
+一个 AI 编码工具 skill（兼容 **ZCode / Claude Code / Codex / 腾讯 WorkBuddy / CodeBuddy**）：**输入架构描述（文字 / Markdown / 文档），输出可直接粘进 PPT 并继续编辑的专业 SVG 架构图。** 纯 SVG 代码生成，不依赖外部 API。
 
 最大的特点不是"画得好看"，而是**画出来的 SVG 在 PowerPoint 里能转换为可编辑形状**——不是一张死图，每个模块、每根线、每个字都能在 PPT 里继续改。
 
@@ -14,9 +14,9 @@
 
 > 以下关键词供搜索检索用。
 
-**中文**：SVG 架构图 · 技术架构图 · 系统架构图 · 云架构图 · 分层架构 · 数据流程图 · 业务流程图 · 泳道图 · 时序图 · 流程图生成 · AI 画架构图 · 自动生成架构图 · PowerPoint 架构图 · SVG 转形状 · 可编辑架构图 · PPT 矢量图 · 微服务架构图 · 数据中台架构 · SaaS 架构图 · 政务架构图 · 投标方案图 · Office 形状 · ZCode skill · AI agent
+**中文**：SVG 架构图 · 技术架构图 · 系统架构图 · 云架构图 · 分层架构 · 数据流程图 · 业务流程图 · 泳道图 · 时序图 · 流程图生成 · AI 画架构图 · 自动生成架构图 · PowerPoint 架构图 · SVG 转形状 · 可编辑架构图 · PPT 矢量图 · 微服务架构图 · 数据中台架构 · SaaS 架构图 · 政务架构图 · 投标方案图 · Office 形状 · ZCode skill · Claude Code skill · Codex · 腾讯 WorkBuddy · CodeBuddy · AI agent
 
-**English**: SVG architecture diagram · technical architecture · system architecture · cloud architecture · layered diagram · data pipeline · flowchart · swimlane · sequence diagram · AI diagram generator · PowerPoint SVG · convert SVG to shape · editable diagram · vector diagram for PPT · microservices architecture · data platform · SaaS architecture · Office shapes · ZCode skill · AI agent
+**English**: SVG architecture diagram · technical architecture · system architecture · cloud architecture · layered diagram · data pipeline · flowchart · swimlane · sequence diagram · AI diagram generator · PowerPoint SVG · convert SVG to shape · editable diagram · vector diagram for PPT · microservices architecture · data platform · SaaS architecture · Office shapes · ZCode skill · Claude Code skill · Codex · WorkBuddy · CodeBuddy · AI agent · agent skills
 
 ---
 
@@ -201,6 +201,15 @@ codex   # Codex 会自动读取 AGENTS.md
 ```
 
 或者在任意 Codex 对话里手动引用：`@SKILL.md 画个架构图`。
+
+### WorkBuddy / CodeBuddy（腾讯）
+
+本 skill 采用 Agent Skills 标准格式（`SKILL.md` + `references/` + `scripts/`），与 WorkBuddy / CodeBuddy 的技能体系同源，可直接导入：
+
+- **WorkBuddy（网页端）**：技能市场 → 「上传技能」→ 导入本仓库目录（如需打包，压缩为 zip 上传），系统自动配置后即可对话使用
+- **CodeBuddy（IDE）**：clone 到项目 `.codebuddy/skills/renais-svg-arch/`，或在设置管理页点「导入 Skill」
+
+> 校验脚本（`validate-svg.ts`）依赖 bun 运行环境；若运行环境无 bun，生成 SVG 的核心流程不受影响，仅跳过自动校验。
 
 ### 通用
 
